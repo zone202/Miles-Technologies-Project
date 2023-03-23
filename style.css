@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+/* text */
+h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  color: white;
+  animation: drop 1.5s ease-in;
+  margin: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  color: white;
+  animation: drop 1.5s ease-in;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+  animation: drop 1.5s ease-in;
+  margin: 30px;
+}
+h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  animation: drop 1.5s ease-in;
+  margin: 30px;
+  text-align: center;
+}
+
+.fa {
+  text-shadow: none;
+}
+/* text end */
+
+/* Animation code */
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
+/* Animation code end */
+
+/* Header/Nav */
+header {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  background-color: gray;
+}
+
+nav {
+  flex: 2;
+  margin-right: 200px;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .nav-links .closeMenu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.logo {
+  font-weight: 400;
+  margin: 40px;
+  font-size: 20px;
+  border: 5px solid black;
+  color: black;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.logo-picture {
+  width: 120px;
+  height: 70px;
+  margin: 20px;
+}
+
+.logo-container {
+  display: flex;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  text-shadow: 5px 5px 7px black;
+  float: right;
+  display: flex;
+}
+
+.nav-link {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  margin: 30px;
+}
+
+.nav-link:hover {
+  color: black;
+  font-size: 25px;
+  text-shadow: none;
+}
+/* Header/Nav End */
+
+/* Banner Section Start*/
+.banner {
+  width: 100%;
+  height: 1000px;
+  background-image: url(./Images/shaking\ hands-min.jpg);
+  background-size: cover;
+  position: relative;
+  isolation: isolate;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: black;
+  opacity: 0.65;
+}
+
+.banner-text {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: auto;
+  padding-top: 300px;
+  font-weight: 500;
+}
+/* Banner Section End*/
+
+/* Goals Section Start*/
+.goals {
+  background: whitesmoke;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 50vh;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.collaborating {
+  width: 30%;
+  margin: 120px;
+}
+
+.goals-text {
+  width: 50%;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+}
+/* Goals Section End*/
+
+/* Strategy Section Start */
+.strategy {
+  background: whitesmoke;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  height: 50vh;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.strategies {
+  width: 30%;
+  margin: 120px;
+}
+
+.strategy-text {
+  width: 50%;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+}
+/* Strategy Section End */
+
+/* Contact Section Start */
+.contact {
+  width: 100%;
+  height: 500px;
+  background-image: url(./Images/businessmen-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  isolation: isolate;
+}
+
+.contact-section {
+  align-items: center;
+  width: 100%;
+  padding-top: 120px;
+  color: white;
+  word-spacing: 5px;
+  text-shadow: 5px 5px black;
+}
+
+.contact::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: black;
+  opacity: 0.75;
+}
+
+.contact-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-button {
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 3px;
+  margin-left: 0px;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  box-shadow: 3px -3px white;
+}
+
+.contact-button:hover {
+  background-color: whitesmoke;
+  color: black;
+  box-shadow: -3px 3px white;
+}
+/* Contact Section End */
+
+/* Testimonial Section Start */
+.testimonial {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-section1 {
+  width: 20%;
+  margin: 100px;
+}
+
+.testimonial-picture {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-text {
+  float: right;
+  padding: 20px;
+}
+
+.female-picture {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+/* Testimonial Section End */
+
+/* Footer Section Start */
+.section-footer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
+  background-color: gray;
+  color: white;
+}
+
+.col {
+  margin: 20px;
+}
+
+.follow {
+  margin-top: 50px;
+  margin-left: 250px;
+  flex-direction: row;
+}
+
+footer .follow i {
+  color: white;
+  padding-right: 4px;
+  cursor: pointer;
+  font-size: 40px;
+  margin: 30px;
+}
+/* Footer Section End */
+
+/* Responsive Code */
+@media (max-width: 1250px) {
+  .goals {
+    flex-direction: column;
+    height: 115vh;
+  }
+
+  .goals-text {
+    margin: 0;
+  }
+
+  .collaborating {
+    margin: 50px;
+    width: 80%;
+  }
+
+  .strategy {
+    flex-direction: column-reverse;
+    height: 80vh;
+  }
+
+  .strategy-text {
+    margin: 0;
+  }
+
+  .strategies {
+    margin: 50px;
+    width: 80%;
+  }
+
+  .testimonial-section1 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 950px) {
+  .contact-section {
+    width: none;
+    margin: none;
+  }
+
+  .goals {
+    flex-direction: column;
+    height: 125vh;
+  }
+
+  .strategy {
+    height: 120vh;
+    padding-bottom: 50px;
+  }
+
+  nav {
+    margin: 0;
+  }
+
+  nav .nav-links {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: grey;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  nav li {
+    margin: 20px;
+  }
+
+  nav .nav-links .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+    float: right;
+    padding-right: 50px;
+  }
+
+  i {
+    display: inline-block;
+    padding: 12px;
+  }
+
+  .contact {
+    height: 1000px;
+  }
+
+  .contact-section {
+    text-align: center;
+  }
+
+  .contact-button {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .testimonial {
+    height: 1700px;
+    flex-direction: column;
+  }
+
+  .testimonial-section1 {
+    width: 70%;
+    margin: 50px;
+  }
+
+  .follow {
+    margin-left: 0;
+  }
+
+  footer .follow i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .goals {
+    height: 175vh;
+  }
+}
+/* Responsive Code End*/
